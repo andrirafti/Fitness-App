@@ -25,12 +25,12 @@ ________________________________________________________________________________
         {
             "id": "rec4ATyvYWNwiI2N9",
             "fields": {
-                "Completed": "Yes",
-                "Description": "Bench Press: 3 sets of 10\nChest flies: 3 sets of 10\n",
-                "Difficulty": "Easy",
-                "Date": "2021-03-13",
-                "Name": "Andri",
-                "BodyPart": "Chest"
+                "completed": "Yes",
+                "description": "Bench Press: 3 sets of 10\nChest flies: 3 sets of 10\n",
+                "difficulty": "Easy",
+                "date": "2021-03-13",
+                "name": "Andri",
+                "bodyPart": "Chest"
             },
 ``
 _________________________________________________________________________________________________________________________________________________________________
