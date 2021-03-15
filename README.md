@@ -36,19 +36,19 @@ ________________________________________________________________________________
 
 ## MVP/Post MVP
 
-```MVP:
+MVP:
 1)Homepage with  nav bar to direct user to certain areas of the site
 2)Get and post your workout from airtable
-3) Allow users to input new WORKOUTS that will appear in the airtable```
+3) Allow users to input new WORKOUTS that will appear in the airtable
 
 
 
 _____________________________________________________________________
 
-```PostMVP:
+PostMVP:
 1)Allow users to Delete workouts
 2)Allow users to view current workouts and edit them to their own accord
-3)Animation for CSS (cool workout animation perhaps?) ```
+3)Animation for CSS (cool workout animation perhaps?) 
 _________________________________________________________________________________________________________________________________________________________________
 
 ## Project Schedule
