@@ -12,12 +12,17 @@ https://wireframe.cc/o16HWw
 _________________________________________________________________________________________________________________________________________________________________
 
 ## API and DATA sample!
-{Name:"Andri",
-BodyPart: "Chest"
-Completed: "Yes"
-Date: "2021-03-13"
-Description: "Bench Press: 3 sets of 10↵Chest flies: 3 sets of 10↵"
-Difficulty: "Easy"}
+ "records": [
+        {
+            "id": "rec4ATyvYWNwiI2N9",
+            "fields": {
+                "Completed": "Yes",
+                "Description": "Bench Press: 3 sets of 10\nChest flies: 3 sets of 10\n",
+                "Difficulty": "Easy",
+                "Date": "2021-03-13",
+                "Name": "Andri",
+                "BodyPart": "Chest"
+            },
 https://airtable.com/tblYXLIBDBbFJ5lZr/viwmw7D5iNGxuyeP4?blocks=hide
 _________________________________________________________________________________________________________________________________________________________________
 
