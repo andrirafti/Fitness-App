@@ -8,11 +8,20 @@ it for others to attempt!
 _________________________________________________________________________________________________________________________________________________________________
 
 ## Wireframes
-https://wireframe.cc/o16HWw
+https://wireframe.cc/o16HWw <<< Component Hiearchy
+
+https://wireframe.cc/Ct2eeN <<< Desktop View
+
+https://wireframe.cc/XQ0GDl <<<< Mobile view)
+
+
+
+
+
 _________________________________________________________________________________________________________________________________________________________________
 
 ## API and DATA sample!
- "records": [
+``"records": [
         {
             "id": "rec4ATyvYWNwiI2N9",
             "fields": {
@@ -23,7 +32,7 @@ ________________________________________________________________________________
                 "Name": "Andri",
                 "BodyPart": "Chest"
             },
-
+``
 _________________________________________________________________________________________________________________________________________________________________
 
 ## MVP/Post MVP
@@ -32,6 +41,11 @@ MVP:
 1)Homepage with  nav bar to direct user to certain areas of the site
 2)Get and post your workout from airtable
 3) Allow users to input new WORKOUTS that will appear in the airtable
+
+
+
+_____________________________________________________________________
+
 PostMVP:
 1)Allow users to Delete workouts
 2)Allow users to view current workouts and edit them to their own accord
@@ -54,22 +68,51 @@ ________________________________________________________________________________
 
 
 ## TimeFrame
-Proposal :                            Estimated :  2 hrs  ||  Actual:  
-AirTable :                            Estimated : 2 hrs   ||  Actual:  
-Nav Bar :                                Estimated :  2 hrs  ||  Actual:  
-Workout Log :Users :                      Estimated :  3 hrs  ||  Actual:  
-Workout Log : addWorkout :                 Estimated :  3 hrs  ||  Actual:  
-Form Creation :                              Estimated :3 hrs  ||  Actual:  
-Add Functionality for axios calls:           Estimated :  3 hrs  ||  Actual:  
-Add Functionality for axios edits/deletes:              Estimated : 3 hrs   ||  Actual:  
- Clear up my functionality code :                          Estimated :  3 hrs  ||  Actual:  
- CSS for userWorkouts:                                      Estimated :  3 hrs ||  Actual:  
- CSS for addWorkouts:                                        Estimated :  3 hrs  ||  Actual:  
- Final Edits all around :                                    Estimated :  2 hrs  ||  Actual:  
- Animation:                                                    Estimated :  2.5 hrs  ||  Actual:  
+
+
+
+              
+Proposal :||  Estimated :  2 hrs  ||  Actual:  
+_____________________________________________________
+
+AirTable :  ||Estimated : 2 hrs   ||  Actual:  
+_____________________________________________________
+
+Nav Bar :    || Estimated :  2 hrs  ||  Actual:  
+_____________________________________________________
+
+Workout Log :Users :  || Estimated :  3 hrs  ||  Actual:  
+_____________________________________________________
+
+Workout Log : addWorkout : Estimated :  3 hrs  ||  Actual:  
+_____________________________________________________
+
+Form Creation :  Estimated :3 hrs  ||  Actual:  
+______________________________________________________________
+
+Add Functionality for axios calls: Estimated :  3 hrs  ||  Actual:  
+___________________________________________________________________
+
+Add Functionality for axios edits/deletes: || Estimated : 3 hrs   ||  Actual:  
+_____________________________________________________________________________
+
+ Clear up my functionality code : || Estimated :  3 hrs  ||  Actual:  
+ ________________________________________________________________________________________
+ 
+ CSS for userWorkouts: || Estimated :  3 hrs ||  Actual: 
+ ________________________________________________________________________________________
+ 
+ CSS for addWorkouts: || Estimated :  3 hrs  ||  Actual:  
+ _________________________________________________________
+ 
+ Final Edits all around : ||Estimated :  2 hrs  ||  Actual:  
+ _____________________________________________________
+ 
+ Animation: || Estimated :  2.5 hrs  ||  Actual:  
  
  
-Total :                                                        Estimated : 34.5 HRS    ||  Actual:  
+ 
+Total :       Estimated : 34.5 HRS    ||  Actual:  
 __________________________________________________________________________________________________________________________________________________________________
 
 
