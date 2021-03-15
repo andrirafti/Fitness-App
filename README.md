@@ -21,8 +21,7 @@ https://wireframe.cc/XQ0GDl <<<< Mobile view)
 _________________________________________________________________________________________________________________________________________________________________
 
 ## API and DATA sample!
-``"records": [
-        {
+       ```{
             "id": "rec4ATyvYWNwiI2N9",
             "fields": {
                 "completed": "Yes",
@@ -31,25 +30,25 @@ ________________________________________________________________________________
                 "date": "2021-03-13",
                 "name": "Andri",
                 "bodyPart": "Chest"
-            },
-``
+            }```
+
 _________________________________________________________________________________________________________________________________________________________________
 
 ## MVP/Post MVP
 
-MVP:
+```MVP:
 1)Homepage with  nav bar to direct user to certain areas of the site
 2)Get and post your workout from airtable
-3) Allow users to input new WORKOUTS that will appear in the airtable
+3) Allow users to input new WORKOUTS that will appear in the airtable```
 
 
 
 _____________________________________________________________________
 
-PostMVP:
+```PostMVP:
 1)Allow users to Delete workouts
 2)Allow users to view current workouts and edit them to their own accord
-3)Animation for CSS (cool workout animation perhaps?) 
+3)Animation for CSS (cool workout animation perhaps?) ```
 _________________________________________________________________________________________________________________________________________________________________
 
 ## Project Schedule
@@ -71,48 +70,23 @@ ________________________________________________________________________________
 
 
 
-              
-Proposal :||  Estimated :  2 hrs  ||  Actual:  
-_____________________________________________________
+|   Tables|  Estimated | Actual  |   |   |
+|---|---|---|---|---|
+| Proposal  |  2 hrs|   |   |   |
+|  AirTable |  2 hrs |   |   |   |
+|   Nav Bar|  2 hrs |   |   |   |
+|  Workout Log :Users : |   3 hrs|   |   |   |
+|  Workout Log : addWorkout : |  3 hrs |   |   |   |
+| Form Creation   |   3 hrs|   |   |   |
+| Add Functionality for axios calls:  | 3hrs  |   |   |   |
+| Add Functionality for axios edits/deletes: |3h |   |   |   |
+| Clear up my functionality code :   | 3hrs  |   |   |   |
+|  CSS for userWorkouts: | 3hr  |   |   |   |
+|  CSS for addWorkouts: |3hr   |   |   |   |
+| Final Edits all around :  | 2hr  |   |   |   |
+|  Animation: | 2.5hrs  |   |   |   |
+| Total  | 34.5  |   |   |   |
 
-AirTable :  ||Estimated : 2 hrs   ||  Actual:  
-_____________________________________________________
-
-Nav Bar :    || Estimated :  2 hrs  ||  Actual:  
-_____________________________________________________
-
-Workout Log :Users :  || Estimated :  3 hrs  ||  Actual:  
-_____________________________________________________
-
-Workout Log : addWorkout : Estimated :  3 hrs  ||  Actual:  
-_____________________________________________________
-
-Form Creation :  Estimated :3 hrs  ||  Actual:  
-______________________________________________________________
-
-Add Functionality for axios calls: Estimated :  3 hrs  ||  Actual:  
-___________________________________________________________________
-
-Add Functionality for axios edits/deletes: || Estimated : 3 hrs   ||  Actual:  
-_____________________________________________________________________________
-
- Clear up my functionality code : || Estimated :  3 hrs  ||  Actual:  
- ________________________________________________________________________________________
- 
- CSS for userWorkouts: || Estimated :  3 hrs ||  Actual: 
- ________________________________________________________________________________________
- 
- CSS for addWorkouts: || Estimated :  3 hrs  ||  Actual:  
- _________________________________________________________
- 
- Final Edits all around : ||Estimated :  2 hrs  ||  Actual:  
- _____________________________________________________
- 
- Animation: || Estimated :  2.5 hrs  ||  Actual:  
- 
- 
- 
-Total :       Estimated : 34.5 HRS    ||  Actual:  
 __________________________________________________________________________________________________________________________________________________________________
 
 
