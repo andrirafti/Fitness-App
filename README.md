@@ -1,5 +1,5 @@
 # Fitness-App
-Fitness-App for users to log their workouts/ View Other peoples workout!
+Fitness-App for users to log their workouts/ view their progress throughout time! Also lets users view others workouts routine/progress!
 _________________________________________________________________________________________________________________________________________________________________
 
 ## Project Description
