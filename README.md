@@ -12,7 +12,8 @@ https://wireframe.cc/o16HWw
 _________________________________________________________________________________________________________________________________________________________________
 
 ## API and DATA sample!
-{BodyPart: "Chest"
+{Name:"Andri",
+BodyPart: "Chest"
 Completed: "Yes"
 Date: "2021-03-13"
 Description: "Bench Press: 3 sets of 10↵Chest flies: 3 sets of 10↵"
