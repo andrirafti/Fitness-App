@@ -6,11 +6,16 @@ import Footer from "./components/Footer"
 import { useState,useEffect } from 'react'
 import { URL, config1 } from "./services"
 import ShowWorkouts from "./components/ShowWorkouts"
+import Userbase from "./components/Userbase"
+import Validator from "./components/Validator"
 import Form from "./components/Form"
+
+
 
 
 function App() {
   const [workout, setWorkout] = useState([]);
+  
   useEffect(() => {
     const makemyworkout = async () => {
       let resp = await axios.get(URL,config1);
@@ -24,18 +29,29 @@ function App() {
     <div>
       <Nav/>
       <Route exact path="/">
-        Home Page!
+      {workout.map((val1) => (
+        <Userbase workout={val1} />))}
+        <Footer/>
       </Route>
       <Route path="/userWorkout">
         {workout.map((val) => (
-          <ShowWorkouts workout={val}/>
+          <ShowWorkouts key={val.id} workout={val}
+          />
+          //setToggleFetch ={setToggleFetch}/>
         ) )}
       </Route>
-      <Route path="/addWorkout">
+      <Route path="/addWorkout"
+      >
        <Form />
       </Route>
-      <footer> <Footer/></footer>
-      console.log("testing")
+      <Route path="/view/:id">
+        <Form val={workout}/>
+          
+      </Route>
+      <Route path="/signUp">
+        <Validator/>
+        </Route>
+      
     </div>
     
   );

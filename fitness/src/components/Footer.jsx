@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <div id="foot">
       <h4>Created By Andri Rafti</h4>
     </div>
   )

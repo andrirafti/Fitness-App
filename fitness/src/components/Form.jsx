@@ -1,8 +1,9 @@
 import {useState } from 'react'
-import { useHistory ,useParams} from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
+import {useEffect} from "react"
 import {URL,config1} from "../services"
 import axios from 'axios'
-const Form = () => {
+const Form = ({val}) => {
   const history = useHistory();
   const [bodyPart,setBodypart] = useState('')
   const [description,setDescription] = useState('')
@@ -12,7 +13,26 @@ const Form = () => {
   const [date, setDate] = useState('')
   const [weight, setWeight] = useState()
   const [goalweight, setGoal] = useState()
+  const params = useParams();
   
+   
+useEffect(() => {
+  if (params.id && val.length > 0) {
+    const training = val.find((val) => val.id === params.id)
+    if (training) {
+      setName(training.name)
+      setGoal(training.goalweight)
+      setWeight(training.weight)
+      setDate(training.date)
+      setCompleted(training.completion)
+      setDifficulty(training.difficulty)
+      setDescription(training.description)
+      setBodypart(training.bodyPart)
+    }
+ }
+  
+}, [val,params.id])
+
 
   const handleSubmit=async (e)=>{
     e.preventDefault();
