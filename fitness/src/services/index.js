@@ -4,3 +4,4 @@ export const config1 = {
     Authorization:"Bearer keyCrCFF2n6BHLBZN"
   }
 }
+export const URL1=`https://api.airtable.com/v0/appwDkdAQtg38rQbp/Fitness`

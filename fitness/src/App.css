@@ -1,38 +1,211 @@
 .App {
   text-align: center;
 }
+#foot{
+  font-family: sans-serif;
+  display: grid;
+  grid-template-areas: "A A" "B C";
+  text-align: center;
+  padding: auto;
+  margin-top: 50px;
+  
+}
+#foot>h4 {
+  grid-area:A;
+  background-color: white;
+}
+#add{
+  background-color: black;
+  margin-left: auto;
+  text-align: center;
+  max-width: 600px;
+ margin-right: auto;
+ display: grid;
+ grid-template-rows: auto;
+   color:black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+ margin-top: 50px;
+  background-image: url("https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1599803110000/photosp/0765c39f-5ade-4095-8e0f-dc944cd0c942/stock-photo-portrait-sky-beach-sand-colorful-running-sunrise-teenage-boy-jogging-0765c39f-5ade-4095-8e0f-dc944cd0c942.jpg");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+div#add1 label{
+  display: inline-block;
+  width:150px;
+}
+div#add1 input{
+  margin-bottom: 6px;
+  width: 150px;
+  display: inline-block;
+}
+div#add1 select{
+  margin-bottom: 6px;
+  width: 150px;
+}
+#nav{
+  background-color:cornflowerblue;
+  display: grid;
+  grid-template-areas: "H H H H" " H H H H" "L A A R" "F F F F ";
+  text-align: center;
+  font-size: large;
+  font-family: sans-serif;
+  margin: 10px;
+}
+#nav>#Home{
+  color:black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav>h1{
+  grid-area:F;
+  color: black;
+  text-align: center;
 }
+#show{
+  background-color:wheat;
+  color: black;
+  text-align: center;
+  display: grid;
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  grid-template-areas: "Z A A A B B" "Z C C C B B" "Z E E E B B" "Z G G G B B" "Z I I I B B" "Z K K K B B" "Z M M M B B" "Z O O O B B" "Z Q Q Q B B" "Z S S S B B"
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+#show >h1{
+  grid-area:A;
+  background-color: gray;
+  
+}
+#show >h2{
+  grid-area:C;
+  
+}
+#show >h3{
+  grid-area:E
+}
+#show >h4{
+  grid-area:G
+}
+#show >h4{
+  grid-area:I
+}
+#show >h5{
+  grid-area:K;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+
+}
+#show >h6{
+  grid-area:M
+}
+#show >p{
+  grid-area:O
+}
+#show>p1{
+grid-area:Q;
+margin-bottom: 50px;
+font-size: medium;
+font-style: italic;
+}
+#show>p3{
+  grid-area: Z;
+  background-color: white;
+  background-image: url("https://www.elitefts.com/wp/wp-content/uploads/2019/05/Fairleigh-Header.jpg");
+}
+#show>p2{
+  grid-area: B;
+  background-color: white;
+  background-image: url("https://www.elitefts.com/wp/wp-content/uploads/2019/05/Fairleigh-Header.jpg");
+  
+}
+#show>button{
+  grid-area: S;
+  padding: 10px;
+  margin: auto;
+  background-color: black;
+  font-size: larger;
+}
+#show>#btn2{
+  grid-area: Q;
+  background-color: thistle;
+}
+#show>#p3{
+  background-color: white;
+}
+#signup{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ display: grid;
+ grid-template-rows: auto;
+ margin-top: 100px;
+ background-color:lightslategray;
+ border:solid black
+  
+}
+div#signup input{
+  margin-bottom: 6px;
+}
+div#signup label{
+  display: inline-block;
+  width:120px;
+}
+#signup>#ll2{
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  border: solid black;
+}
+#body2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: grid;
+  margin: 16px;
+  grid-template-areas: "A B C D E" " A G H I J" " A L M N O" " A Q R S T ";
+ background-image: url("https://cdn.wallpapersafari.com/76/54/3ogCXc.jpg");
+
+}
+#body2> h3{
+  grid-area: C;
+  background-color: white;
+  text-align: center;
+  color: black;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+#setmoti{
+  display: grid;
+ font-family: sans-serif;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 100px;
+ 
+ max-width: 500px;
+ background-color: cornsilk;
+ border: solid black;
+}
+#setmoti label{
+  display:inline-block;
+  width: 100px;
+  
+}
+#setmoti input{
+  margin: 6px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#setmoti button{
+ max-width: 50px;
+ margin-bottom: 25px;
+ 
+}
+#setmoti> #link{
+  color: black;
+}
+#back{
+  font-size: 35px;
+  background-color: white;
 }

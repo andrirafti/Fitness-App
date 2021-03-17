@@ -42,11 +42,13 @@ useEffect(() => {
     
       await axios.post(URL, { fields: NewWorkout }, config1)
     
-    history.push("/")
+    history.push("/userWorkout")
+    window.location.reload()
   }
   
   return (
-    <form id="add"onSubmit={handleSubmit}>
+    <form id="add" onSubmit={handleSubmit}>
+      <div id="add1">
       <div>
       
       <label>Name:</label>
@@ -57,12 +59,12 @@ useEffect(() => {
 
       <div>
       
-      <label>Current Weight:(optional)</label>
+      <label>Current Weight:</label>
       <input   placeholder="Curr Weight"type="number" value={weight} onChange={(e) => setWeight(e.target.valueAsNumber)} />
       </div>
       <div>
       
-      <label>Goal Weight:(optional)</label>
+      <label>Goal Weight:</label>
       <input   placeholder="Goal Weight"type="number" value={goalweight} onChange={(e) => setGoal(e.target.valueAsNumber)} />
       </div>
 
@@ -117,7 +119,7 @@ useEffect(() => {
         </div>
       <button type="submit">Log Workout</button>
       
-      
+      </div>
    </form>
   )
 }

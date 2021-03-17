@@ -2,15 +2,16 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import axios from "axios";
 import { URL, config1 } from "../services"
-import {useHistory} from "react-router-dom"
+
 const ShowWorkouts = ({ workout }) => {
   const { name, bodyPart, difficulty, description, date, completion, weight, goalweight } = workout.fields
-  const history=useHistory()
+  
   const remove = async () => {
     const Link = `${URL}/${workout.id}`
     await axios.delete(Link, config1);
     //workout.setToggleFetch((workout) => !workout); ;
-    history.push("/")
+    //history.push("/")
+    window.location.reload()
    
 }
 
@@ -29,7 +30,7 @@ const ShowWorkouts = ({ workout }) => {
       <p2></p2>
       <p3 id="p3">___________</p3>
       
-      <button onClick={remove}>Remove</button>
+      <button onClick={remove}>❌</button>
       <Link to={`/view/:${workout.id}`}>
         <button id="btn2">Update Workout</button>
       </Link>
