@@ -33,7 +33,9 @@ const Validator = () => {
   return (
     
     <div id="signup">
-      <Link id="ll2"to="/forum">Motivation Forum!</Link>
+
+      <Link id="ll2" to="/forum">Motivation Forum!</Link>
+      <Link to='/admin'>Admin Login</Link>
       <h3>{results}</h3>
       <form onSubmit={handleSubmit}>
         <div>

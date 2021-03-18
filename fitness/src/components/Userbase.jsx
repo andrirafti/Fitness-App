@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Userbase = ({workout}) => {
   const { name, completion,date } = workout.fields
   
@@ -13,3 +12,4 @@ const Userbase = ({workout}) => {
 }
 
 export default Userbase
+

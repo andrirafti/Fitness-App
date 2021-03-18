@@ -17,7 +17,7 @@
 #add{
   background-color: black;
   margin-left: auto;
-  text-align: center;
+  border: solid red;
   max-width: 600px;
  margin-right: auto;
  display: grid;
@@ -30,18 +30,24 @@
 
 }
 div#add1 label{
+  margin-left: 25px;
   display: inline-block;
-  width:150px;
+  width:120px;
+  
 }
 div#add1 input{
   margin-bottom: 6px;
-  width: 150px;
+  width: 130px;
   display: inline-block;
 }
 div#add1 select{
   margin-bottom: 6px;
-  width: 150px;
+  width: 130px;
 }
+#add1 button{
+  width: 100px;
+}
+
 #nav{
   background-color:cornflowerblue;
   display: grid;
@@ -208,4 +214,52 @@ div#signup label{
 #back{
   font-size: 35px;
   background-color: white;
+}
+#goku{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+#users{
+  display: flex;
+}
+#message3{
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 18px;
+}
+#user2{
+  color: #385898;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 5px;
+}
+#motivation{
+  margin: 10px;
+  margin-bottom: 20px;
+    background-color: #e9ebee;
+    color: #1d2129;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#image1{
+  border-radius: 50%;
+  background-color: #1d2129;
+}
+#quote{
+  text-align: left;
+  border:solid black;
+  background-color: cornflowerblue;
+  
+}
+#quoteb{
+  display:inline-block;
+  text-align: left;
+  margin-bottom: 30px;
+  
+  
 }

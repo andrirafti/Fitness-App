@@ -24,7 +24,7 @@ const history=useHistory()
       <div id="setmoti">
         <h1> Welcome All Users! Please motivate each other to finish your workout!!</h1>
         <div>
-          <label>User Name:</label>
+          <label>User:</label>
           <input required type="text" value={user} placeholder="UserName" onChange={(e) => setUser(e.target.value)} />
         </div>
         <div>
