@@ -59,6 +59,7 @@ div#add1 select{
 }
 #nav>#Home{
   color:black;
+  margin: 20px;
 }
 
 #nav>h1{
@@ -262,4 +263,37 @@ div#signup label{
   margin-bottom: 30px;
   
   
+}
+#ADMIN3{
+  display: grid;
+ font-family: sans-serif;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 100px;
+ 
+ max-width: 500px;
+ background-color: cornsilk;
+ border: solid black;
+}
+#ADMIN3 label{
+  display:inline-block;
+  width: 100px;
+}
+#MAIN{
+  text-align: center;
+}
+#adminlogin{
+  display: grid;
+ font-family: sans-serif;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 100px;
+ 
+ max-width: 500px;
+ background-color: cornsilk;
+ border: solid black;
+}
+#adminlogin label{
+  display:inline-block;
+  width: 100px;
 }

@@ -4,12 +4,10 @@ import axios from "axios"
 import {URL2,config1} from "../services"
 const AdminControls = () => {
   const [quote, setQuote] = useState('')
-  
-  
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     const quoteofday = {
       quote
     }
@@ -17,8 +15,9 @@ const AdminControls = () => {
     window.location.reload()
   }
   return (
-    <div>
+    <div id="ADMIN3">
       <form onSubmit={handleSubmit}>
+        <h1 id="MAIN">Admin Page</h1>
         <h3>Hello,Andri</h3>
         <p>Set your users Motivtional Quote of the day!</p>
         <div>
@@ -32,3 +31,4 @@ const AdminControls = () => {
 }
 
 export default AdminControls
+

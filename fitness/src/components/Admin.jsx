@@ -21,7 +21,7 @@ const Admin = () => {
 }
 
   return (
-    <div>
+    <div id="adminlogin">
       <form onSubmit={handleSubmit}>
         <h1>Welcome Admin</h1>
         <p>Please Input login credentials below.</p>
