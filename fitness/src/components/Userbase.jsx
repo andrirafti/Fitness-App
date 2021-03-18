@@ -12,4 +12,3 @@ const Userbase = ({workout}) => {
 }
 
 export default Userbase
-
