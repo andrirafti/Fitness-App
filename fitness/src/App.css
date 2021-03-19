@@ -135,7 +135,7 @@
     background-color: white;
   }
   #signup {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: sans-serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -160,7 +160,7 @@
     border: solid black;
   }
   #body2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: sans-serif;
     display: grid;
     margin: 16px;
     grid-template-areas: "A B C D E" " A G H I J" " A L M N O" " A Q R S T ";
@@ -427,7 +427,7 @@
     background-color: white;
   }
   #signup {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -452,7 +452,7 @@
     border: solid black;
   }
   #body2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: serif;
     display: grid;
     margin: 16px;
     grid-template-areas: "A B C D E" " A G H I J" " A L M N O" " A Q R S T ";
