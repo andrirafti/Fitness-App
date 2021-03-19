@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Admin from "./components/Admin";
 import AdminControls from "./components/AdminControls";
 import ShowAdminQuote from "./components/ShowAdminQuote";
+import Nutrition from "./components/Nutrition";
 
 function App() {
   const [workout, setWorkout] = useState([]);
@@ -67,6 +68,9 @@ function App() {
       </Route>
       <Route path="/addWorkout">
         <Form />
+      </Route>
+      <Route path="/nutrition">
+        <Nutrition />
       </Route>
       <Route path="/view/:id">
         <Form val={workout} />

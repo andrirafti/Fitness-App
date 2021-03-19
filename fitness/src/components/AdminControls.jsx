@@ -3,6 +3,7 @@ import axios from "axios";
 import { URL1, config1 } from "../services";
 const AdminControls = () => {
   const [quote, setQuote] = useState("");
+  const [foodtip, setFoodTip] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,6 +13,13 @@ const AdminControls = () => {
     };
     await axios.post(URL1, { fields: quoteOfDay }, config1);
     window.location.reload();
+  };
+  const handleSubmit2 = async (e) => {
+    e.preventDefault();
+    const foodTipOfDay = {
+      foodtip,
+    };
+    await axios.post(URL1, { fields: foodTipOfDay }, config1);
   };
   return (
     <div id="ADMIN3">
@@ -28,6 +36,16 @@ const AdminControls = () => {
           />
         </div>
         <button type="submit"> Send!</button>
+      </form>
+      <form onSubmit={handleSubmit2}>
+        <h2>Send your users some nutrtion facts!</h2>
+        <label>Nutrtion Fact:</label>
+        <input
+          type="text"
+          value={foodtip}
+          onChange={(e) => setFoodTip(e.target.value)}
+        />
+        <button type="submit">Send!</button>
       </form>
     </div>
   );

@@ -2,6 +2,9 @@
   .App {
     text-align: center;
   }
+  #headers {
+    text-align: center;
+  }
   #foot {
     font-family: sans-serif;
     display: grid;
@@ -60,6 +63,17 @@
   #nav > #Home {
     color: black;
     margin: 20px;
+  }
+  #fitnesspal2 {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -55px;
+    margin-left: 10px;
+  }
+  #fitnesspal {
+    height: 50px;
+    width: 100px;
   }
 
   #nav > h1 {
@@ -135,7 +149,7 @@
     background-color: white;
   }
   #signup {
-    font-family: sans-serif;
+    font-family: serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -160,7 +174,7 @@
     border: solid black;
   }
   #body2 {
-    font-family: sans-serif;
+    font-family: serif;
     display: grid;
     margin: 16px;
     grid-template-areas: "A B C D E" " A G H I J" " A L M N O" " A Q R S T ";
@@ -427,7 +441,7 @@
     background-color: white;
   }
   #signup {
-    font-family: serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -452,7 +466,7 @@
     border: solid black;
   }
   #body2 {
-    font-family: serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: grid;
     margin: 16px;
     grid-template-areas: "A B C D E" " A G H I J" " A L M N O" " A Q R S T ";
@@ -576,4 +590,24 @@
     display: inline-block;
     width: 100px;
   }
+
+  #fitnesspal2 {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -800px;
+    margin-left: 80px;
+  }
+  #fitnesspal {
+    height: 50px;
+    width: 100px;
+  }
+
+  #headers {
+    text-align: center;
+  }
+}
+#chicken {
+  width: 200px;
+  margin: 20px;
 }
