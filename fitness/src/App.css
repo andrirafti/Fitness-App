@@ -58,6 +58,7 @@
     font-size: 15px;
     font-family: sans-serif;
     margin: 10px;
+    border: solid black;
   }
   #nav>#Home{
     color:black;
@@ -371,6 +372,7 @@
       font-size: 20px;
       font-family: sans-serif;
       margin: 15px;
+      border: solid darkblue;
     }
     #nav>#Home{
       color:white;
