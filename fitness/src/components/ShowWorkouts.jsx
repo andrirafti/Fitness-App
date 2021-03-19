@@ -26,16 +26,16 @@ const ShowWorkouts = ({ workout }) => {
       <h6>Diffculty-Level:{difficulty}</h6>
       <p className="p1">Completion:{completion}</p>
       <p1 className='p2'>Date: {date}</p1>
+      
       <p4></p4>
       <p2></p2>
       <p3 id="p3">___________</p3>
       
       <button onClick={remove}>❌</button>
-      <Link to={`/view/:${workout.id}`}>
+      <Link id="view"to={`/view/:${workout.id}`}>
         <button id="btn2">Update Workout</button>
       </Link>
       <h7></h7>
-      
       </div>
       
   )
