@@ -1,13 +1,17 @@
-import React from 'react'
-import {useState} from 'react'
+import React from "react";
+import { useState } from "react";
 
 const Reply = () => {
-  const [reply,setReply] =useState('')
+  const [reply, setReply] = useState("");
   return (
     <div>
-      <input type="text" value={reply} onChange={(e)=>setReply(e.target.value)}/>
+      <input
+        type="text"
+        value={reply}
+        onChange={(e) => setReply(e.target.value)}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Reply
+export default Reply;
