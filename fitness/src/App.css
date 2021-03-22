@@ -72,6 +72,10 @@
     height: 50px;
     width: 50px;
   }
+  #fitbtn{
+    width: 40px;
+    height: 40px;
+  }
 
   #nav > h1 {
     grid-area: F;
