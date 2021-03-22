@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 function Nav(){
-  //const history = useHistory();
+  const history = useHistory();
   const push = () => {
-    //history.push("/nutrition");
+    history.push("/nutrition");
     //window.location.reload();
   };
   return (
