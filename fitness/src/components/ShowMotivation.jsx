@@ -3,8 +3,8 @@ import axios from "axios";
 import { URL2, config1 } from "../services";
 import { useState } from "react";
 
-const ShowMotivation = ({ val }) => {
-  const { user, message } = val.fields;
+const ShowMotivation = (props) => {
+  const { user, message } = props.andri2.fields;
   const [like, setLike] = useState(0);
   const [reply, setReply] = useState("");
   const [reply1, setReply1] = useState("");
@@ -17,9 +17,9 @@ const ShowMotivation = ({ val }) => {
   };
 
   const removed = async () => {
-    const Link = `${URL2}/${val.id}`;
+    const Link = `${URL2}/${props.andri2.id}`;
     await axios.delete(Link, config1);
-    window.location.reload();
+    props.setToggleFetch((val) => !val)
   };
 
   const handleSubmit = (e) => {

@@ -15,12 +15,13 @@ import { Link } from "react-router-dom";
 import Admin from "./components/Admin";
 import AdminControls from "./components/AdminControls";
 import ShowAdminQuote from "./components/ShowAdminQuote";
-import Nutrition from "./components/Nutrition";
+import Nutrition from "./components/Nutrition"
 
 function App() {
   const [workout, setWorkout] = useState([]);
   const [forum, setForum] = useState([]);
   const [quote, setQuote] = useState([]);
+  const [toggleFetch,setToggleFetch]=useState(false)
 
   useEffect(() => {
     const makemyworkout = async () => {
@@ -37,7 +38,7 @@ function App() {
       setForum(resp1.data.records);
     };
     makemyforum();
-  }, []);
+  }, [toggleFetch]);
 
   useEffect(() => {
     const quoteofday = async () => {
@@ -46,14 +47,15 @@ function App() {
       setQuote(resp2.data.records);
     };
     quoteofday();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div>
       <Nav />
       <Route exact path="/">
         {quote.map((val) => (
-          <ShowAdminQuote val={val} />
+          <ShowAdminQuote andri={val} 
+          setToggleFetch={setToggleFetch}/>
         ))}
         {workout.map((val1) => (
           <Userbase workout={val1} />
@@ -70,7 +72,7 @@ function App() {
         <Form />
       </Route>
       <Route path="/nutrition">
-        <Nutrition />
+<Nutrition/>
       </Route>
       <Route path="/view/:id">
         <Form val={workout} />
@@ -83,7 +85,8 @@ function App() {
       </Route>
       <Route path="/viewforum">
         {forum.map((val) => (
-          <ShowMotivation val={val} />
+          <ShowMotivation andri2={val}
+          setToggleFetch={setToggleFetch}/>
         ))}
         <Link to="/forum">Back</Link>
       </Route>
