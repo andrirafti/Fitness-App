@@ -3,7 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { URL, config1 } from "../services";
 import axios from "axios";
-const Form = ({ val }) => {
+const Form = (props) => {
   const history = useHistory();
   const [bodyPart, setBodypart] = useState("");
   const [description, setDescription] = useState("");
@@ -16,8 +16,9 @@ const Form = ({ val }) => {
   const params = useParams();
 
   useEffect(() => {
-    if (params.id && val.length > 0) {
-      const training = val.find((val) => val.id === params.id);
+    if (params.id && props.val.length > 0) {
+      //in app.js val is equal to our id hence why i use it here
+      const training = props.val.find((val) => val.id === params.id);
       if (training) {
         setName(training.name);
         setGoal(training.goalweight);
@@ -29,7 +30,7 @@ const Form = ({ val }) => {
         setBodypart(training.bodyPart);
       }
     }
-  }, [val, params.id]);
+  }, [props.val, params.id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +48,8 @@ const Form = ({ val }) => {
     await axios.post(URL, { fields: NewWorkout }, config1);
 
     history.push("/userWorkout");
-    window.location.reload();
+    props.setToggleFetch((val) => !val)
+    
   };
 
   return (

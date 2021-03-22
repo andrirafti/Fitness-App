@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const ShowMotivation = (props) => {
   const { user, message } = props.andri2.fields;
+  //andri2 is set in
   const [like, setLike] = useState(0);
   const [reply, setReply] = useState("");
   const [reply1, setReply1] = useState("");

@@ -30,7 +30,7 @@ function App() {
       setWorkout(resp.data.records);
     };
     makemyworkout();
-  }, []);
+  }, [toggleFetch]);
   useEffect(() => {
     const makemyforum = async () => {
       let resp1 = await axios.get(URL2, config1);
@@ -64,12 +64,14 @@ function App() {
       </Route>
       <Route path="/userWorkout">
         {workout.map((val) => (
-          <ShowWorkouts key={val.id} workout={val} />
+          <ShowWorkouts key={val.id} workout={val}
+            setToggleFetch={setToggleFetch}/>
           //setToggleFetch ={setToggleFetch}/>
         ))}
       </Route>
       <Route path="/addWorkout">
-        <Form />
+        <Form
+        setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/nutrition">
 <Nutrition/>

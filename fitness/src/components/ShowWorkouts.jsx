@@ -3,15 +3,15 @@ import {Link} from "react-router-dom"
 import axios from "axios";
 import { URL, config1 } from "../services"
 
-const ShowWorkouts = ({ workout }) => {
-  const { name, bodyPart, difficulty, description, date, completion, weight, goalweight } = workout.fields
+const ShowWorkouts = (props) => {
+  const { name, bodyPart, difficulty, description, date, completion, weight, goalweight } = props.workout.fields
   
   const remove = async () => {
-    const Link = `${URL}/${workout.id}`
+    const Link = `${URL}/${props.workout.id}`
     await axios.delete(Link, config1);
     //workout.setToggleFetch((workout) => !workout); ;
     //history.push("/")
-    window.location.reload()
+    props.setToggleFetch((val) => !val)
    
 }
 
@@ -32,7 +32,7 @@ const ShowWorkouts = ({ workout }) => {
       <p3 id="p3">___________</p3>
       
       <button onClick={remove}>❌</button>
-      <Link id="view"to={`/view/:${workout.id}`}>
+      <Link id="view"to={`/view/:${props.workout.id}`}>
         <button id="btn2">Update Workout</button>
       </Link>
       <h7></h7>
