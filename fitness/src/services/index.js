@@ -6,5 +6,4 @@ export const config1 = {
     Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
   },
 };
-export const secretID = "andrirafti";
-export const secretPass = "matilda93";
+
