@@ -17,11 +17,13 @@ import AdminControls from "./components/AdminControls";
 import ShowAdminQuote from "./components/ShowAdminQuote";
 import Nutrition from "./components/Nutrition"
 
+
 function App() {
   const [workout, setWorkout] = useState([]);
   const [forum, setForum] = useState([]);
   const [quote, setQuote] = useState([]);
-  const [toggleFetch,setToggleFetch]=useState(false)
+  const [toggleFetch, setToggleFetch] = useState(false)
+  
 
   useEffect(() => {
     const makemyworkout = async () => {
@@ -53,8 +55,12 @@ function App() {
     <div>
       <Nav />
       <Route exact path="/">
+      <h3 id="h3">Hello user!</h3>
+        <p id="p33">Please click <a href="addWorkout">here</a> to start your fitness journey!</p>
+        <p id="p33">The following below will show a users name and wheter or not they have completed their workout for the day.</p>
+        
         {quote.map((val) => (
-          <ShowAdminQuote andri={val} 
+          <ShowAdminQuote andri={val}
           setToggleFetch={setToggleFetch}/>
         ))}
         {workout.map((val1) => (
@@ -63,6 +69,7 @@ function App() {
         <Footer />
       </Route>
       <Route path="/userWorkout">
+        <h1 id="h22">Public Workout Folder</h1>
         {workout.map((val) => (
           <ShowWorkouts key={val.id} workout={val}
             setToggleFetch={setToggleFetch}/>
@@ -70,6 +77,7 @@ function App() {
         ))}
       </Route>
       <Route path="/addWorkout">
+        <h2 id="h3">Log your workout!</h2>
         <Form
         setToggleFetch={setToggleFetch}/>
       </Route>
@@ -80,6 +88,7 @@ function App() {
         <Form val={workout} />
       </Route>
       <Route path="/signUp">
+        <h3 id="h3">Click <a href="viewforum">here</a> to directly enter the motivation forum!</h3>
         <Validator />
       </Route>
       <Route path="/forum">

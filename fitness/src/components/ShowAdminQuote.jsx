@@ -18,8 +18,9 @@ const ShowAdminQuote = (props) => {
 
   return (
     <div>
+      <h2 id="h3">Admin Quote of the day!</h2>
       <div>
-        <h4 id="quote">Admin Tip: {quote}</h4>
+        <h4 id="quote">Admin Andri: {quote}</h4>
         <button id="quoteb" onClick={removed}>
           ❌
         </button>
